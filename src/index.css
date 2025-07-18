@@ -8,3 +8,11 @@
 body {
     font-family: "Montserrat", sans-serif;
 }
+
+.transitionClasses {
+    @apply transition delay-150 duration-300 ease-in-out;
+}
+
+.btnCommen {
+    @apply px-5 py-2 rounded-full cursor-pointer;
+}
