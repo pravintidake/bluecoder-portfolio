@@ -5,17 +5,7 @@ import { GrAchievement } from "react-icons/gr";
 import { MdOutlineMail } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import {
-  FaCode,
-  FaFigma,
-  FaNodeJs,
-  FaPalette,
-  FaReact,
-  FaSearch,
-  FaServer,
-  FaShoppingCart,
-  FaTools,
-} from "react-icons/fa";
+import { FaFigma, FaNodeJs, FaReact } from "react-icons/fa";
 import { LuShoppingBag } from "react-icons/lu";
 import { CgPerformance } from "react-icons/cg";
 import { IoCartOutline } from "react-icons/io5";
