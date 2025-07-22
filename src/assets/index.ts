@@ -16,6 +16,12 @@ import clientLogo1 from "./clientLogo1.png";
 import clientLogo2 from "./clientLogo2.png";
 import clientLogo3 from "./clientLogo3.png";
 
+import partner1 from "./partner1.png";
+import partner2 from "./partner2.png";
+import partner3 from "./partner3.png";
+import partner4 from "./partner4.png";
+import partner5 from "./partner5.png";
+
 export {
   project1,
   project2,
@@ -32,4 +38,9 @@ export {
   clientLogo1,
   clientLogo2,
   clientLogo3,
+  partner1,
+  partner2,
+  partner3,
+  partner4,
+  partner5,
 };

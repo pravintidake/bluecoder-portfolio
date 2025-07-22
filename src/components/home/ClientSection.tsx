@@ -1,49 +1,13 @@
 import { FaRegStar, FaStar, FaStarHalfAlt } from "react-icons/fa";
-import {
-  client1,
-  client2,
-  client3,
-  clientLogo1,
-  clientLogo2,
-  clientLogo3,
-} from "../../assets";
+
 import React from "react";
+import clientData from "../../utils/ClientData";
 
 const ClientSection = () => {
-  let clientData = [
-    {
-      name: "Josh Englis",
-      designation: "Architect",
-      image: client1,
-      companyLogo: clientLogo1,
-      comment:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consectetur dignissimos facere ut sunt mollitia sed tenetur provident. Delectus, ipsam.",
-      rating: 4.5,
-    },
-    {
-      name: "Peter Quill",
-      designation: "Sales Executive",
-      image: client2,
-      companyLogo: clientLogo2,
-      comment:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consectetur dignissimos facere ut sunt mollitia sed tenetur provident. Delectus, ipsam.",
-      rating: 5,
-    },
-    {
-      name: "Tom Hardy",
-      designation: "Web Developer",
-      image: client3,
-      companyLogo: clientLogo3,
-      comment:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consectetur dignissimos facere ut sunt mollitia sed tenetur provident. Delectus, ipsam.",
-      rating: 5,
-    },
-  ];
-
   return (
     <div className="px-40 bg-indigo-50 flex flex-col items-center p-10">
       <h1 className="text-gray-500 font-bold text-3xl mb-10">Our Client Say</h1>
-      <div className="grid grid-cols-3 gap-5 w-full my-20">
+      <div className="grid grid-cols-3 gap-5 w-full my-10">
         {clientData.map((client, id) => (
           <div key={id} className="flex flex-col">
             <div>
