@@ -1,21 +1,13 @@
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { PiInstagramLogoBold } from "react-icons/pi";
 import { Link } from "react-router-dom";
+import SocialIcons from "./core/SocialIcons";
 
 let menuOption = [
   { title: "Home", href: "/" },
   { title: "About Us", href: "/about" },
   { title: "Services", href: "/services" },
   { title: "Portfolio", href: "/portfolio" },
-  { title: "Blog", href: "/blog" },
+  { title: "Blog", href: "https://bluecodertech.netlify.app" },
   { title: "Contact", href: "/contact" },
-];
-
-let socialIcons = [
-  { icon: <FaFacebookF />, href: "/" },
-  { icon: <PiInstagramLogoBold />, href: "/" },
-  { icon: <FaLinkedinIn />, href: "/" },
 ];
 
 const Header = () => {
@@ -30,6 +22,7 @@ const Header = () => {
         {menuOption.map((m, i) => (
           <Link
             to={m.href}
+            target={m.title == "Blog" ? "_blank" : undefined}
             key={i}
             className="text-slate-500 hover:border-b hover:text-slate-900 transition duration-800 ease-in-out"
           >
@@ -38,17 +31,7 @@ const Header = () => {
         ))}
       </div>
       {/* Social Media Icons */}
-      <div className="flex gap-5">
-        {socialIcons.map((i, id) => (
-          <Link
-            to={i.href}
-            className="text-md p-2 border rounded-full"
-            key={id}
-          >
-            {i.icon}
-          </Link>
-        ))}
-      </div>
+      <SocialIcons />
     </div>
   );
 };

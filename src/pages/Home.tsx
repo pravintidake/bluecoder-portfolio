@@ -29,7 +29,7 @@ const Home = () => {
       <PartnerSection />
 
       {/* NewsLetter */}
-      <div className="px-40 bg-black flex items-center p-10 border-b border-white">
+      <div className="px-40 bg-gray-900 flex items-center p-10 border-b border-white">
         <div className="w-1/2">
           <h1 className="text-gray-200 font-bold text-3xl mb-3">
             Sign Up Our Newsletter
