@@ -3,10 +3,10 @@ import SocialIcons from "./core/SocialIcons";
 
 const Footer = () => {
   let quickLinks = [
-    { title: "About Us", href: "/" },
-    { title: "Portfolio", href: "/" },
-    { title: "Contact Us", href: "/" },
-    { title: "Services & Pricing", href: "/" },
+    { title: "About Us", href: "/about" },
+    { title: "Portfolio", href: "/portfolio" },
+    { title: "Contact Us", href: "/contact" },
+    { title: "Services & Pricing", href: "/services" },
   ];
 
   let contactInfo = [
@@ -39,7 +39,7 @@ const Footer = () => {
                   to={link.href}
                   key={id}
                   className="transitionClasses hover:border-b hover:text-slate-300 w-max"
-                  target={"_blank"}
+                  // target={"_blank"}
                   rel="noopener noreferrer"
                 >
                   {link.title}

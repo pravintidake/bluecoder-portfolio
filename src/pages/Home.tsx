@@ -5,13 +5,17 @@ import PortfolioSection from "../components/home/PortfolioSection";
 import ClientSection from "../components/home/ClientSection";
 import BlogSection from "../components/home/BlogSection";
 import PartnerSection from "../components/home/PartnerSection";
-const Home = () => {
+import { useEffect } from "react";
+const Home = ({ pageTitle }: any) => {
+  useEffect(() => {
+    document.title = pageTitle;
+  }, [pageTitle]);
   return (
     <div className="w-full">
       {/* Hero Section */}
       <Hero />
       {/* About Section */}
-      <AboutSection />
+      <AboutSection isBtn={true} />
 
       {/* Services */}
       <ServiceSection />

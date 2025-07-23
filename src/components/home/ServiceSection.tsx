@@ -4,7 +4,6 @@ import { serviceData } from "../../utils";
 const ServiceSection = () => {
   return (
     <div className="px-40 bg-slate-100 flex flex-col items-center p-10">
-      <h1 className="text-gray-500 font-bold text-3xl mb-10">Our Service</h1>
       <div className="grid grid-cols-3 gap-10 w-full mb-10">
         {serviceData.map((service, idx) => (
           <div

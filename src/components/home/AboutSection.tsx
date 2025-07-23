@@ -1,8 +1,8 @@
-import Button from "../core/Button";
 import aboutProfile from "../../assets/aboutProfile.jpg";
 import { aboutData } from "../../utils";
+import { Link } from "react-router-dom";
 
-const AboutSection = () => {
+const AboutSection = ({ isBtn }: any) => {
   return (
     <div className="h-[92vh] px-40 bg-white flex justify-between items-center p-10">
       <div className="w-1/2 flex flex-col items-start gap-4">
@@ -24,10 +24,14 @@ const AboutSection = () => {
             </p>
           ))}
         </div>
-        <Button
-          classes="transitionClasses btnCommen bg-transparent border-2 border-black hover:border-white hover:shadow hover:bg-black hover:text-white"
-          title="Add More"
-        />
+        {isBtn ? (
+          <Link
+            to="/about"
+            className="transitionClasses btnCommen bg-transparent border-2 border-black hover:border-white hover:shadow hover:bg-black hover:text-white"
+          >
+            See More
+          </Link>
+        ) : null}
       </div>
       <img
         src={aboutProfile}

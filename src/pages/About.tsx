@@ -1,10 +1,20 @@
 import AboutSection from "../components/home/AboutSection";
+import BreadCrumb from "../components/core/BreadCrumb";
+import PartnerSection from "../components/home/PartnerSection";
+import TeamMembers from "../components/core/TeamMembers";
+import { useEffect } from "react";
 
-const About = () => {
+const About = ({ pageTitle }: any) => {
+  useEffect(() => {
+    document.title = pageTitle;
+  }, [pageTitle]);
   return (
     <div className="w-full flex justify-center flex-col items-center">
-      <h1 className="mx-40 my-5 text-2xl font-bold text-slate-600">About Us</h1>
-      <AboutSection />
+      <BreadCrumb heading="About Us" page="About" />
+      <AboutSection isBtn={false} />
+      {/* Team Members */}
+      <TeamMembers />
+      <PartnerSection />
     </div>
   );
 };

@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
 import myPicture from "../../assets/portfolio_face.jpg";
-import Button from "../core/Button";
+
 const Hero = () => {
   return (
     <div
@@ -14,14 +15,18 @@ const Hero = () => {
           repellendus, labore repellat quo excepturi ipsum.
         </p>
         <div className="flex gap-4">
-          <Button
-            classes="transitionClasses btnCommen bg-purple-500 text-white hover:text-purple-500 hover:bg-white"
-            title="Our Service"
-          />
-          <Button
-            classes="transitionClasses btnCommen bg-transparent border border-white hover:border-purple-500 hover:shadow hover:bg-purple-600"
-            title="Contact Me"
-          />
+          <Link
+            to="/services"
+            className="transitionClasses btnCommen bg-purple-500 text-white hover:text-purple-500 hover:bg-white"
+          >
+            Our Service
+          </Link>
+          <Link
+            to="/contact"
+            className="transitionClasses btnCommen bg-transparent border border-white hover:border-purple-500 hover:shadow hover:bg-purple-600"
+          >
+            Contact Me
+          </Link>
         </div>
       </div>
     </div>
