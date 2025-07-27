@@ -19,18 +19,18 @@ const Footer = () => {
   ];
 
   return (
-    <div className="bg-black text-white">
-      <div className="flex gap-20 px-40 py-10 bg-gray-900">
-        <div className="w-1/2">
+    <div className="bg-black text-white animate__animated animate__fadeInUp">
+      <div className="block md:block lg:flex gap-20 px-10 md:px-20 lg:px-40 py-10 bg-gray-900">
+        <div className="w-full lg:w-1/2">
           <h3 className="font-bold text-2xl">Bluecoder</h3>
-          <p className="text-sm my-3">
+          <p className="text-sm my-3 text-justify lg:text-left">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
             accusamus quibusdam officiis pariatur aspernatur, voluptatem ad non
             excepturi at rerum!
           </p>
           <SocialIcons />
         </div>
-        <div className="w-1/2 flex justify-between">
+        <div className="w-full lg:w-1/2 flex flex-col lg:flex-row justify-between mt-3 gap-3">
           <div>
             <p className="text-lg font-bold mb-3">Quick Links</p>
             <div className="flex flex-col font-semibold gap-3">
@@ -58,7 +58,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="text-sm text-center px-40 py-5">
+      <p className="text-sm text-center px-10 md:px-20 lg:px-40 py-5">
         &copy; {new Date().getFullYear()}{" "}
         <Link
           to="https://www.youtube.com/@bluecodertech"

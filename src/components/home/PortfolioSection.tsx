@@ -18,15 +18,17 @@ const PortfolioSection = () => {
   ];
 
   return (
-    <div className="px-40 bg-white flex flex-col items-center p-10">
-      <h1 className="text-gray-500 font-bold text-3xl mb-10">Our Portfolio</h1>
-      <div className="grid grid-cols-3 gap-5 mb-10">
+    <div className="px-10 md:px-20 lg:px-40 bg-white flex flex-col items-center p-10">
+      <h1 className="text-gray-500 font-bold text-3xl mb-10 text-center">
+        Our Portfolio
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
         {gridData.map((grid, index) => (
           <div className="grid gap-5" key={index}>
             {grid.map((gr, id) => (
               <div key={id}>
                 <img
-                  className="h-auto max-w-full rounded shadow"
+                  className="h-auto max-w-full rounded shadow animate__animated animate__fadeInUp"
                   src={gr.image}
                   alt="gr.image"
                 />

@@ -33,11 +33,11 @@ const BlogSection = () => {
   ];
 
   return (
-    <div className="px-40 bg-slate-50 flex flex-col items-center p-10">
+    <div className="px-10 md:px-20 lg:px-40 bg-slate-50 flex flex-col items-center p-10">
       <h1 className="text-gray-500 font-bold text-3xl mb-10">
         Blogs & Articles
       </h1>
-      <div className="grid grid-cols-3 w-full gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-6 animate__animated animate__fadeInDown">
         {blogs.map((blog, id) => (
           <div className="bg-white rounded shadow" key={id}>
             <img

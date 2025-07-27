@@ -33,22 +33,22 @@ const Home = ({ pageTitle }: any) => {
       <PartnerSection />
 
       {/* NewsLetter */}
-      <div className="px-40 bg-gray-900 flex items-center p-10 border-b border-white">
-        <div className="w-1/2">
+      <div className="px-10 md:px-20 lg:px-40 bg-gray-900  block md:block lg:flex items-center p-10 border-b border-white">
+        <div className="w-full md:w-full lg:w-1/2">
           <h1 className="text-gray-200 font-bold text-3xl mb-3">
             Sign Up Our Newsletter
           </h1>
-          <p className="text-gray-200">
+          <p className="text-gray-200 text-center md:text-center lg:text-left">
             We Offer An Informative Monthly Technology - Check It Out
           </p>
         </div>
-        <div className="w-1/2 flex">
+        <div className="w-full md:w-full lg:w-1/2 flex mt-2">
           <input
             type="text"
-            className="p-2 bg-white w-full rounded-l"
+            className="p-1 lg:p-2 bg-white w-full rounded-l text-sm lg:text-normal"
             placeholder="Enter You Email"
           />
-          <button className="bg-purple-500 text-white p-2 w-1/2 border border-purple-500 rounded-r">
+          <button className="bg-purple-500 text-white p-1 lg:p-2 w-1/2 border border-purple-500 rounded-r text-sm lg:text-normal">
             Subscribe Now
           </button>
         </div>

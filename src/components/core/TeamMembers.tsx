@@ -2,9 +2,9 @@ import { teamData } from "../../utils";
 
 const TeamMembers = () => {
   return (
-    <div className="px-40 bg-slate-50 flex flex-col items-center p-10">
+    <div className="px-10 md:px-20 lg:px-40 bg-slate-50 flex flex-col items-center p-10">
       <h1 className="text-gray-500 font-bold text-3xl">Team Members</h1>
-      <div className="grid grid-cols-4 gap-5 w-full my-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 w-full my-10 animate__animated animate__headShake">
         {teamData.map((member, id) => (
           <div
             className="w-full flex flex-col gap-3 items-start justify-start"

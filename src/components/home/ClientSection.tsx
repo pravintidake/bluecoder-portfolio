@@ -5,11 +5,14 @@ import clientData from "../../utils/ClientData";
 
 const ClientSection = () => {
   return (
-    <div className="px-40 bg-indigo-50 flex flex-col items-center p-10">
+    <div className="px-10 md:px-20 lg:px-40 bg-indigo-50 flex flex-col items-center p-10">
       <h1 className="text-gray-500 font-bold text-3xl mb-10">Our Client Say</h1>
-      <div className="grid grid-cols-3 gap-5 w-full my-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 ld:grid-cols-3 gap-5 w-full my-10">
         {clientData.map((client, id) => (
-          <div key={id} className="flex flex-col">
+          <div
+            key={id}
+            className="flex flex-col animate__animated animate__bounceInUp"
+          >
             <div>
               <div className="w-full flex flex-col justify-between gap-3 bg-white rounded p-10">
                 <img

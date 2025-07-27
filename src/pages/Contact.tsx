@@ -71,10 +71,10 @@ const Contact = ({ pageTitle }: any) => {
   return (
     <div className="w-full flex justify-center flex-col items-center">
       <BreadCrumb heading="Contact Us" page="Contact" />
-      <div className="px-40 w-full flex justify-center mt-10 flex-col items-center">
+      <div className="px-10 md:px-20 lg:px-40 w-full flex justify-center mt-10 flex-col items-center">
         <h1 className="text-gray-500 font-bold text-3xl mb-10">Contact Form</h1>
         <form
-          className="flex flex-col items-center gap-5 w-2/3 mb-10"
+          className="flex flex-col items-center gap-5 w-full lg:w-2/3 mb-10 animate__animated animate__headShake"
           onSubmit={handleSubmit}
         >
           <div className="flex gap-3 w-full">
